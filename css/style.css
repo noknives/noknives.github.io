@@ -253,6 +253,165 @@ header svg {width: 9.5rem}
 
 .project-nav-top {width: 100%; padding-top: 1rem;}
 
+.project-nav-bottom {
+	padding-top: .8rem;
+	padding-bottom: .8rem ;
+}
+
+.project-nav-bottom-button {
+	width: 50%;
+}
+
+@media only screen and (min-width: 35rem) {
+	.project-nav-bottom-button {
+		width: 33.33333%;
+	}
+}
+
+.project-nav-bottom-button-next {
+	justify-content: flex-end;
+}
+
+.project-nav-bottom-button-next .proj-name {order: 1;}
+.project-nav-bottom-button-next .direction {order: 2; margin-left: 1rem;}
+.project-nav-bottom-button-prev .direction {margin-right: 1rem;}
+
+@media only screen and (max-width: 35rem) {
+	.proj-name {display: none;}
+}
+
+@keyframes bounce-right {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(30px, 0px, 0);
+    transform: translate3d(30px, 0, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(15px, 0, 0);
+    transform: translate3d(15px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes bounce-left {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(-30px, 0px, 0);
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(-15px, 0, 0);
+    transform: translate3d(-15px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+}
+
+@keyframes bounce-right {
+  from,
+  35%,
+  63%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  50%,
+  53% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(25px, 0px, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  80% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(18px, 0, 0);
+    transform: translate3d(18px, 0, 0);
+  }
+}
+
+
+@keyframes bounce-right {
+  from,
+  20%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  50%,
+  53% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(25px, 0px, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+}
+
+.project-nav-bottom-button-prev:hover .proj-name {
+  -webkit-animation-name: bounce-right;
+  animation-name: bounce-right;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+	animation-duration: 1500ms;
+	animation-duration: 900ms;
+}
+
+.project-nav-bottom-button-next:hover .proj-name {
+  -webkit-animation-name: bounce-left;
+  animation-name: bounce-left;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+	animation-duration: 1500ms;
+}
+
 
 /* -------- INTRO -------- */
 
