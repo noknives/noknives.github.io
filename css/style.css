@@ -163,6 +163,11 @@ h1, h2, h3, h4, h5 {font-weight: 500;}
 
 .center {align-items: center;}
 
+
+.inline-block a {
+	display: inline-block;
+}
+
 @media only screen and (min-width: 45rem) {
 	.two-col div:first-child {margin-right: 20px;}
 	.two-col div:second-child {margin-left: 20px;}
@@ -197,23 +202,34 @@ h1, h2, h3, h4, h5 {font-weight: 500;}
 	padding: 7% 4%
 }
 
-.project-box-container {
+.project-box-wrapper {
 	margin: 0 auto;
 	max-width: 1220px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	overflow: hidden;
+	width: 100%;
+}
+
+.project-box-content {
+	width: 100%;
+}
+
+.project-box-img {
+	width: 100%;
+	transform-origin: 0 center;
+	transition: all 400ms ease-in-out;
+	display: inline-block;
+	margin-right: -10rem; 
+	position: relative;
+	z-index: 1;
 }
 
 .project-box-link {
 	opacity: 0;
-	transition: all 200ms ease-in-out;
-	width: 0;
-}
-
-.project-box-img {
-	transform: scale(1);
-	transform-origin: 0 center;
+	transition: all 400ms ease-in-out;
+	width: 10rem;
+	text-align: right;
+	position: relative;
+	z-index: 0;
 }
 
 @media only screen and (max-width: 58em) {
@@ -221,17 +237,17 @@ h1, h2, h3, h4, h5 {font-weight: 500;}
 }
 
 @media only screen and (min-width: 58em) {
-	.project-box-container:hover {
+	.project-box-wrapper:hover {
 		cursor: url('../images/eye.svg'), pointer;
 	}
-
-	.project-box-container:hover .project-box-img {
-		transform: scale(.95);
+	
+	.project-box-wrapper:hover .project-box-img {
+		transform: translateX(-12rem);
 	}
 
-	.project-box-container:hover .project-box-link {
-		width: 10%;
+	.project-box-wrapper:hover .project-box-link {
 		opacity: 1;
+
 	}
 }
 
