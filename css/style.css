@@ -61,18 +61,19 @@ body {
 	font-size: 2.0625rem;
 	line-height: 1.212121212;
 
-	font-family: orpheuspro,serif;
-	font-weight: 400;
-	font-style: normal;
-
-	/*width: -webkit-calc(100% - 10px);
-	width: calc(100% - 10px);
-	margin: 5px auto;
-	max-width: 1920px;*/
-	
 	width: 100%;
 	background-color: #f2eeca;
 	color: #ca9c30;
+}
+
+
+
+/* --------- TYPOGRAPHY ---------- */
+
+body {
+	font-family: orpheuspro,serif;
+	font-weight: 400;
+	font-style: normal;
 	
 	text-rendering: optimizeLegibility;
 	font-feature-settings: "kern";
@@ -84,10 +85,6 @@ body {
 	font-smoothing: antialiased;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
-
-
-
-/* --------- TYPOGRAPHY ---------- */
 
 a {text-decoration: none; color: #ca9c30;}
 a.look {cursor: url('../images/eye.svg'), pointer;}
@@ -120,9 +117,10 @@ ul li {margin-left: 0; padding-left: 0;}
 @media only screen and (max-width: 58em) {
 	.small {
 		font-size: 1.45rem;
+		line-height: 1.36;
 	}
 	
-	.small p {margin-top:0; line-height: 1;}
+	/*.small p {margin-top:0; line-height: 1;}*/
 }
 
 @font-face {
@@ -255,7 +253,7 @@ h1, h2, h3, h4, h5 {font-weight: 500;}
 	}
 }
 
-/* -------- HEADER & FOOTER -------- */
+/* -------- HEADER, FOOTER & NAVS -------- */
 
 header, .headline .container, header, footer .container {
 	display: flex;
@@ -283,7 +281,7 @@ header svg {width: 9.5rem}
 	width: 50%;
 }
 
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 45rem) {
 	.project-nav-bottom-button {
 		width: 33.33333%;
 	}
@@ -297,8 +295,12 @@ header svg {width: 9.5rem}
 .project-nav-bottom-button-next .direction {order: 2; margin-left: 1rem;}
 .project-nav-bottom-button-prev .direction {margin-right: 1rem;}
 
-@media only screen and (max-width: 35rem) {
+@media only screen and (max-width: 45rem) {
 	.proj-name {display: none;}
+	
+	.project-nav-bottom-button-next {align-items: flex-end;}
+	.project-nav-bottom-button-prev {align-items: flex-start;}
+	
 }
 
 @keyframes bounce-right {
