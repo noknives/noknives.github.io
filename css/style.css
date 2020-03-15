@@ -107,13 +107,22 @@ a.look {cursor: url('../images/eye.svg'), pointer;}
 }
 
 .medium {font-weight: 500;}
+
 ul {list-style: none;}
 ul li {margin-left: 0; padding-left: 0;}
+
+ul.bullets {list-style: initial;}
+ul.bullets li {margin-left: 1rem; padding-left: 0;}
+
 .text-center {text-align: center;}
 
 .large {font-size: 2.0625rem;}
+.dos {font-size: 1.875rem; margin-bottom: 1rem;}
 
 @media only screen and (min-width: 58em) {
+	
+	.dos {font-size: 2.875rem; margin-bottom: 1rem;}
+	
 	.large {
 		font-size: 3.75rem;
 		line-height: 1.133333333;
@@ -138,7 +147,7 @@ ul li {margin-left: 0; padding-left: 0;}
 
 h1, h2, h3, h4, h5 {font-weight: 500;}
 
-.dos {font-size: 2.875rem; margin-bottom: 1rem;}
+
 
 
 
@@ -148,7 +157,7 @@ h1, h2, h3, h4, h5 {font-weight: 500;}
 .blue-bg {background-color: #375dbd;}
 .pink {color: #ebb4eb;}
 .beige {color: #f2eeca;}
-.charcoal {color: #343332;}
+.charcoal, .charcoal a, .charcoal li {color: #343332;}
 
 
 /* Background Colors */
@@ -416,7 +425,7 @@ header svg {width: 9.5rem}
 
 .proj-info {margin-top: 6.5%;}
 
-.info-col h2, .space-below h2 {margin-bottom: .65rem;}
+.info-col h2, .info-block h2 {margin-bottom: .65rem;}
 
 .info-col {margin-right: 5%;}
 
@@ -429,12 +438,30 @@ header svg {width: 9.5rem}
 	padding-bottom: 3px;
 }
 
+.external {
+	width: 11px;
+	margin-left: 1px;
+	padding-bottom: 0px;
+}
+
 /* INFO */
 
+.info-block {margin-bottom: 2rem;}
+
+
+
+.interstate li {margin-bottom: 1.2rem; line-height: 1.2}
+
 @media only screen and (min-width: 45rem) {
-	.info-wide-col {width: 75%;}
+	
+	.push-top {margin-top: 3rem;}
+	
+	.info-wide-col {width: 61.666667%; margin-right: 5%;}
 
-	.info-narrow-col {width: 25%;}
+	.info-narrow-col {width: 33.3333%;}
+	
+	.info-3-col {width: 33.3333%;  margin-right: 5%;}
 
-	.info-block {width: 50%;}
+	.info-wide-col .info-block {width: 45%; margin-right: 2rem;}
+	
 }
