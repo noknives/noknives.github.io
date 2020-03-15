@@ -403,9 +403,12 @@ header svg {width: 9.5rem}
 	margin-bottom: -.1em; 
 	font-family: 'pilowlavaregular', sans-serif; 
 	letter-spacing:-0.05em;
-	margin-left: -12px;
-	margin-right: -20px;
+	margin-left: -.05em;
+	margin-right: -.05em;
 }
+
+.hello-svg {width: 100%; margin-left: -1px; margin-right: -1px; margin-bottom: .2em;}
+
 .intro p {display: inline;}
 
 /* -------- HEADLINE ------- */
