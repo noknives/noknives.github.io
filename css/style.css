@@ -204,6 +204,10 @@ h1, h2, h3, h4, h5 {font-weight: 500;}
 	.col-sm {
 		flex-direction: column;
 	}
+	
+	.flex-start-sm {
+		
+	}
 }
 
 .flex-img {
@@ -281,29 +285,26 @@ h1, h2, h3, h4, h5 {font-weight: 500;}
 /* -------- HEADER, FOOTER & NAVS -------- */
 
 header, .headline .container, header, footer .container {
-	display: flex;
-	flex-direction: row;;
-	align-items: center;
 	padding-top: .8rem;
 	padding-bottom: .8rem ;
 }
 
-/*
-.headline {
-	background-image:url(../images/arrow-2.svg); 
-	background-size: 70%; 
-	background-attachment: fixed; 
-	background-position: center;
-	background-repeat: no-repeat;
-}
-*/
+.main-nav ul li, footer nav ul li {display: inline; margin-left: 1.5rem;}
+.main-nav ul li:first-child, footer nav ul li:first-child {margin-left: 0;}
 
-.header-left, .header-right, .footer-left, .footer-right {width: 50%;}
-.header-right, .footer-right {text-align: right;}
+@media only screen and (max-width: 45rem) {
+	.main-nav ul, footer nav ul {margin-top: .5rem;}
+}
+
+@media only screen and (min-width: 45rem) {
+	.header-left, .header-right, .footer-left, .footer-right {width: 50%;}
+	.header-right, .footer-right {text-align: right;}
+	.main-nav ul li, footer nav ul li {margin-left: 1.5rem;}
+}
 
 header svg {width: 9.5rem}
 
-.main-nav ul li, footer nav ul li {display: inline; margin-left: 1.5rem;}
+
 
 .project-nav-top {width: 100%; padding-top: 1rem;}
 
