@@ -88,6 +88,7 @@ body {
 
 a {text-decoration: none; color: #ca9c30;}
 a.look {cursor: url('../images/eye.svg'), pointer;}
+.italic {font-style: italic;}
 
 .underline {
 	display: inline-block;
@@ -136,6 +137,8 @@ ul li {margin-left: 0; padding-left: 0;}
 }
 
 h1, h2, h3, h4, h5 {font-weight: 500;}
+
+.dos {font-size: 2.875rem; margin-bottom: 1rem;}
 
 
 
@@ -407,13 +410,13 @@ header svg {width: 9.5rem}
 
 /* ---------- PROJECT INTRO --------- */
 
-.proj-intro {padding-bottom: 7%;}
+.proj-intro, .info-intro {padding-bottom: 7%;}
 
 .proj-intro h1, .proj-intro p {display: inline;}
 
 .proj-info {margin-top: 6.5%;}
 
-.info-col h2 {margin-bottom: .65rem;}
+.info-col h2, .space-below h2 {margin-bottom: .65rem;}
 
 .info-col {margin-right: 5%;}
 
@@ -428,7 +431,10 @@ header svg {width: 9.5rem}
 
 /* INFO */
 
-.info-wide-col {width: 75%;}
-.info-narrow-col {width: 25%;}
+@media only screen and (min-width: 45rem) {
+	.info-wide-col {width: 75%;}
 
-.info-block {width: 50%;}
+	.info-narrow-col {width: 25%;}
+
+	.info-block {width: 50%;}
+}
