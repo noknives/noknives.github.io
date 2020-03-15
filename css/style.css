@@ -388,7 +388,7 @@ header svg {width: 9.5rem}
 .intro {width: 100%; padding-top: 5%; padding-bottom: 10%;}
 .hello {
 	font-size: 26vw; 
-	margin-bottom: -2rem; 
+	margin-bottom: -.1em; 
 	font-family: 'pilowlavaregular', sans-serif; 
 	letter-spacing:-0.05em;
 	margin-left: -12px;
