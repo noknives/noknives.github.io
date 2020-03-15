@@ -118,7 +118,7 @@ ul.bullets li {margin-left: 1rem; padding-left: 0;}
 
 .large {font-size: 1.875rem;}
 .dos {font-size: 1.375rem; margin-bottom: 1rem;}
-.small {font-size: 1rem;line-height: 1.36;}
+.small {font-size: 1.25rem;line-height: 1.36;}
 
 @media only screen and (min-width: 34em) {
 	.large {font-size: 2.8125rem; line-height: 1.133333333;}
