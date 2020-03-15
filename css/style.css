@@ -158,6 +158,7 @@ h1, h2, h3, h4, h5 {font-weight: 500;}
 /* Text Colors */
 .okk, .okk a {color: white !important;}
 .iron-north, .iron-north a {color: #c5aef3 !important;}
+.iron-north .info-col p, .iron-north .info-col ul {color: #ffffff;}
 
 
 
@@ -167,6 +168,8 @@ h1, h2, h3, h4, h5 {font-weight: 500;}
 .flex {display: flex;}
 
 .row {flex-direction: row;}
+.col {flex-direction: column;}
+.wrap {flex-wrap: wrap;}
 
 .space-between {justify-content: space-between;}
 
@@ -422,3 +425,10 @@ header svg {width: 9.5rem}
 	margin-left: 10px;
 	padding-bottom: 3px;
 }
+
+/* INFO */
+
+.info-wide-col {width: 75%;}
+.info-narrow-col {width: 25%;}
+
+.info-block {width: 50%;}
